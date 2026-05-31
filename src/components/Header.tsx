@@ -6,16 +6,16 @@ import Link from "next/link";
 // import { IProduct } from "@/interfaces/ProductInterface";
 // import { useAppSelector } from "@/redux/hooks";
 // import { IProduct } from "@/interfaces/ProductInterface";
-import { Search as SearchIcon } from "@deemlol/next-icons";
 
-import { User as UserIcon } from "@deemlol/next-icons";
-import { Moon as MoonIcon } from "@deemlol/next-icons";
 import CartModal from "./CartModal";
+import { MoonIcon, SearchIcon, UserIcon } from "./ui/icons";
+
 
 export const Header = () => {
   return (
-    <header className="w-[60%] mx-auto flex p-2 justify-around gap-10 items-center">
+    <header className="w-full py-3 ">
       {/* logo */}
+<nav className="w-[60%] mx-auto flex justify-around tems-center gap-10 ">
       <div>
         <Link href="/" className="text-4xl">
           HanzD
@@ -28,8 +28,6 @@ export const Header = () => {
           className="w-full flex gap-3 py-2 px-4 rounded-full bg-neutral-100 border  outline-none "
         >
           <SearchIcon />
-          {/* TODO: mejorar esta cosa fea */}
-          <hr className="border h-full" />
           <input
             type="text"
             placeholder="Busca cualquier cosa..."
@@ -57,11 +55,12 @@ export const Header = () => {
             </div>
           </li>
           <li>
-            {/* TODO: convertir esto en un component */}
+            {/* TODO: añadir una key */}
             <CartModal />
           </li>
         </ul>
       </div>
+</nav>
     </header>
   );
 };

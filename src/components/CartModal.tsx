@@ -1,36 +1,35 @@
-import React from "react";
 import { CartModalItem } from "./CartModalItem";
-import { ShoppingCart as ShoppingCartIcon } from "@deemlol/next-icons";
 import Link from "next/link";
+import { ShoppingCartIcon } from "./ui/icons/ShoppingCartIcon";
 
 export default function CartModal() {
   const products = [
     {
-      id: "eradfasfas",
+      id: "1eradfasfas",
       image: "/img-example-3.webp",
       title: "Pantalon error",
       price: 200,
     },
     {
-      id: "eradfasfas",
+      id: "2eradfasfas",
       image: "/img-example-2.jpg",
       title: "Camisa vaige",
       price: 500,
     },
     {
-      id: "eradfasfas",
+      id: "3eradfasfas",
       image: "/img-example-2.jpg",
       title: "Camisa vaige",
       price: 500,
     },
     {
-      id: "eradfasfas",
+      id: "4eradfasfas",
       image: "/img-example-2.jpg",
       title: "Camisa vaige",
       price: 500,
     },
     {
-      id: "eradfasfas",
+      id: "5eradfasfas",
       image: "/img-example-1.jpg",
       title: "nose pero esto es un titulo",
       price: 200,
