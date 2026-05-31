@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import Link from "next/link";
 
 export default function Login() {
   //   const { data: session } = useSession();
@@ -24,8 +25,7 @@ export default function Login() {
 
   return (
     <>
-      <Header />
-      <div className="min-h-screen  flex items-center justify-center p-4">
+          <div className="min-h-screen  flex items-center justify-center p-4">
         <div className="relative z-10 w-full max-w-md backdrop-blur-md rounded-2xl p-8 bg-black border border-white/20 shadow-xl">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-white mb-2">Bienvenido de vuelta!</h1>
@@ -111,9 +111,9 @@ export default function Login() {
           <div className="text-center mt-6">
             <p className="text-gray-400 text-sm">
               No tienes una cuenta?{" "}
-              <a href="#" className="text-[#16a084] hover:underline">
+              <Link href="/register" className="text-[#16a084] hover:underline">
                 Registro
-              </a>
+              </Link>
             </p>
           </div>
         </div>
