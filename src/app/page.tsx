@@ -1,12 +1,8 @@
-// import { Footer } from "@/components/Footer/Footer";
-import { Header } from "@/components/Header";
 import Link from "next/link";
 
 export default function Home() {
 	return (
 		<>
-			<Header />
-
 			<main className='flex   items-center h-[80vh]'>
 				<div className='flex flex-col w-[60%] mx-auto justify-center items-center  p-2  text-center'>
 					<div className=' flex justify-center items-cente mx-auto mb-6 '>
